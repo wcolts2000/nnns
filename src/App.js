@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from "./components/Home/Home";
+import Contact from "./components/Contact/Contact";
+import Wifi from "./components/Wifi/Wifi";
+import Services from "./components/Services/Services";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Modal from "./components/Home/Modal";
+
+class App extends Component {
+  state = {
+    modalActive: false,
+    category: null
+  };
+
+  toggleModal = category => {
+    this.setState({ modalActive: !this.state.modalActive, category });
+  };
+
+  render() {
+    return (
+      <>
+        <Modal
+          modalActive={this.state.modalActive}
+          category={this.state.category}
+          toggleModal={this.toggleModal}
+        />
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/wifi">
+              <Wifi />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Home {...props} toggleModal={this.toggleModal} />
+              )}
+            />
+          </Switch>
+          <Footer />
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
