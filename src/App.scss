@@ -175,6 +175,7 @@ main {
   justify-content: space-evenly;
   padding: 8rem 2rem;
   font-size: 2rem;
+  background: powderblue;
 }
 
 .modal {
@@ -231,7 +232,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 4rem 2rem;
-  background: blue;
+  background-image:linear-gradient(to bottom right,  rgb(0, 119, 255),  rgb(130, 0, 190));
   color: white;
   border-radius: 7px;
   min-width: 15%;
@@ -247,7 +248,7 @@ main {
 
   button {
     padding: 1.6rem 5rem;
-    border-radius: 7px;
+    border-radius: 70px;
     margin-bottom: 2rem;
     font-size: 1.6rem;
     letter-spacing: 1.5px;
