@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
