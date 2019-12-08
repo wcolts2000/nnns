@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import sprite from "./../../assets/svg/sprite.svg";
 
 function Hero() {
     return (
@@ -8,7 +9,12 @@ function Hero() {
                     Northern Nevada Networking Services <br/> <span>Business and Hotel Wifi Network Provider</span>
                 </h1>
                 <p>Providing Wifi Network Installation and Service to the greater Reno/Carson Valley, NNNS is your local Network Specialists</p>
-                <button>Wifi Packages</button>
+                <button>
+                    <svg viewBox="0 0 60 60" className="icon hero-icon">
+                        <use xlinkHref={`${sprite}#wifi-signal`}></use>
+                    </svg>
+                    Wifi Packages
+                </button>
             </div>
             <div className="hero__right">
                 <h2>Wifi Services</h2>

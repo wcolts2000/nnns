@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import fb from "../../assets/images/facebook.png";
+// import sprite from "./../../assets/svg/sprite.svg";
 
 function SocialHeader() {
   return (

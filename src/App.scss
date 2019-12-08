@@ -1,5 +1,5 @@
 .App {
-  // text-align: center;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 .App-logo {
@@ -117,18 +117,29 @@
     button {
       padding: 1.5rem 3.5rem;
       font-size: 2.6rem;
-      color: aqua;
-      background: black;
-      border: none;
+      color: white;
+      background: transparent;
+      border: 1px solid white;
       text-transform: uppercase;
-      border-radius: 3px;
+      border-radius: 70px;
       cursor: pointer;
       transition: all 0.3s;
       font-weight: bold;
       letter-spacing: 1.75px;
+      animation: pulse .75s ease 0s infinite alternate-reverse both;  
 
-      &:hover {
+      
+      .icon.hero-icon {
+        fill: white;
+        transform: scale(1.75);
+        margin-right: 2rem;
+        background: transparent;
+        transition: all .3s;
+        
+      }
+      &:hover, &:hover .icon.hero-icon {
         color: black;
+        fill: black;
         background: aqua;
       }
     }
@@ -137,6 +148,24 @@
   &__right {
     font-size: 2.4rem;
     font-weight: bold;
+
+    ul {
+      padding-inline-start: 0;
+    }
+    li {
+      margin-bottom: .4rem;
+      font-weight: normal;
+      list-style: none;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 1px 1px 5px 7px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 2px 2px 40px 10px rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -145,6 +174,7 @@
   height: 1.6rem;
   margin-right: 1rem;
 }
+
 
 .footer {
   background: lightgray;
