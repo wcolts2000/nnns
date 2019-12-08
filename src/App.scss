@@ -72,16 +72,26 @@
         color: aqua;
       }
 
-      &:not(:last-of-type) {
+      &:nth-child(2 ), &:nth-child(3) {
         border-right: 1px solid white;
         padding-right: 2rem;
+      }
+    }
+    .home-link {
+      margin-right: auto;
+      padding-left: 3rem;
+      
+      .icon {
+        fill: white;
+        transform: scale(1.7);
+        margin: 0 2rem .25rem 0;
+        transition: all .3s;
 
         &:hover {
-          border-right: 1px solid aqua;
+          fill: aqua;
         }
       }
     }
-
 
   }
 }

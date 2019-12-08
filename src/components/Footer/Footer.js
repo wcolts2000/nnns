@@ -23,16 +23,19 @@ function Footer() {
         </p>
         <p>Reno, NV 89502</p>
         <p>
+        <a href="mailto:airitsolutionsreno@gmail.com">
           <svg viewBox="0 0 16 16" className="icon">
             <use xlinkHref={`${sprite}#mail`}></use>
           </svg>
-          <a href="mailto:airitsolutionsreno@gmail.com">Send Email</a>
+          Email Us</a>
         </p>
         <p>
-          <svg viewBox="0 0 16 16" className="icon">
-            <use xlinkHref={`${sprite}#phone`}></use>
-          </svg>
-          775-555-5555
+          <a href="tel:775-555-5555">
+            <svg viewBox="0 0 16 16" className="icon">
+              <use xlinkHref={`${sprite}#phone`}></use>
+            </svg>
+            775-555-5555
+          </a>
         </p>
       </div>
     </footer>

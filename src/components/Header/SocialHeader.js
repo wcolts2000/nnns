@@ -20,7 +20,7 @@ function SocialHeader() {
           height="16px"
         />
       </a>
-      <a href="tel:775-742-3138">Phone: 775-555-5555</a>
+      <a href="tel:775-555-5555">Phone: 775-555-5555</a>
     </nav>
   );
 }
