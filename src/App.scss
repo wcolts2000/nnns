@@ -1,5 +1,6 @@
 .App {
   font-family: 'Encode Sans Condensed', sans-serif;
+  background-color: powderblue;
 }
 
 .App-logo {
@@ -86,8 +87,8 @@
 }
 
 .hero {
-  padding: 2rem;
-  background-image: url(./assets/images/switch.jpg);
+  padding: 8rem 4rem 15rem;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url(./assets/images/switch.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
@@ -95,6 +96,7 @@
   color: white;
   text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.7);
   display: flex;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 
   &__left {
     width: 50%;
@@ -148,6 +150,11 @@
   &__right {
     font-size: 2.4rem;
     font-weight: bold;
+    border-radius: 55px 0 55px 0;
+    background: linear-gradient(to top left, rgba(0, 119, 255, .5),  rgba(130, 0, 190, .2));
+    flex: 1;
+    height: 100%;
+    padding: 0 5rem;
 
     ul {
       padding-inline-start: 0;
@@ -187,10 +194,31 @@
     width: 50%;
   }
 
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      padding-inline-start: 0;
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    small {
+      margin-top: auto;
+    }
+  }
+
   &__right {
     p {
       display: flex;
       align-items: center;
+
+      &:nth-of-type(2) {
+        padding-left: 2.6rem;
+      }
     }
 
     p a {

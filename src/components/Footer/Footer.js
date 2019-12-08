@@ -11,6 +11,7 @@ function Footer() {
           <li>Wifi Network Administration</li>
           <li>Security Camera Installation</li>
         </ul>
+        <small>2019 &copy; all rights reserved</small>
       </div>
       <div className="footer__right">
         <h3>Contact us with any questions</h3>
