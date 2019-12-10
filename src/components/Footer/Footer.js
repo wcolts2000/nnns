@@ -32,7 +32,7 @@ function Footer() {
         <p>
           <a href="tel:775-555-5555">
             <svg viewBox="0 0 16 16" className="icon">
-              <use xlinkHref={`${sprite}#phone`}></use>
+              <use xlinkHref={`${sprite}#telephone`}></use>
             </svg>
             775-555-5555
           </a>

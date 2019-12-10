@@ -6,7 +6,7 @@ function CTA({ toggleModal }) {
     <main>
       <figure className="card">
         <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#sitemap`}></use>
+          <use xlinkHref={`${sprite}#wifi-signal`}></use>
         </svg>
         <figcaption>Wifi Services</figcaption>
         <button onClick={() => toggleModal("wifi")}>DETAILS</button>
@@ -20,14 +20,14 @@ function CTA({ toggleModal }) {
       </figure>
       <figure className="card">
         <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#maps-and-location`}></use>
+          <use xlinkHref={`${sprite}#casino-cctv`}></use>
         </svg>
         <figcaption>Security Cameras</figcaption>
         <button onClick={() => toggleModal("cameras")}>DETAILS</button>
       </figure>
       <figure className="card">
         <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#survey`}></use>
+          <use xlinkHref={`${sprite}#sketch`}></use>
         </svg>
         <figcaption>Free Job Appraisal</figcaption>
         <button onClick={() => toggleModal("appraisal")}>DETAILS</button>
