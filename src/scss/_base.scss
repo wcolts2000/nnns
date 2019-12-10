@@ -1,0 +1,50 @@
+// COLOR VARIABLES
+$color-primary: #0077ff;
+$color-secondary: #8200be;
+
+$color-light-blue: #00ffff;
+$color-pale-blue: #b0e0e6;
+
+$color-black: #0f0f0f;
+$color-white: #fff;
+
+$color-gray-dark: #282c34;
+$color-gray-light: #d3d3d3;
+
+// FONT VARIABLES
+
+// RESPONSIVE BREAKPOINTS
+
+// GLOBAL STYLES
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background-color: $color-pale-blue;
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}

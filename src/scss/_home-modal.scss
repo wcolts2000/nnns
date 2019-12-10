@@ -1,0 +1,53 @@
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: $color-white;
+  background: rgba($color-black, 0.7);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+
+  &__container {
+    padding: 3rem;
+    background: $color-white;
+    color: $color-black;
+
+    h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 40rem;
+    }
+
+    ul {
+      padding: 2rem;
+      list-style: none;
+
+      li {
+        padding: 0.5rem;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+  }
+}
+
+.modal.active {
+  display: flex;
+}

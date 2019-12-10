@@ -1,0 +1,45 @@
+
+.footer {
+  background: $color-gray-light;
+  font-size: 1.6rem;
+  padding: 2rem;
+  display: flex;
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      padding-inline-start: 0;
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    small {
+      margin-top: auto;
+    }
+  }
+
+  &__right {
+    p {
+      display: flex;
+      align-items: center;
+
+      &:nth-of-type(2) {
+        padding-left: 2.6rem;
+      }
+    }
+
+    p a {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+}

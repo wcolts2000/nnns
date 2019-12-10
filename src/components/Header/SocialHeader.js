@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import fb from "../../assets/images/facebook.png";
-// import sprite from "./../../assets/svg/sprite.svg";
+import sprite from "./../../assets/svg/sprite.svg";
 
 function SocialHeader() {
   return (
@@ -12,13 +11,9 @@ function SocialHeader() {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img
-          className="fb"
-          src={fb}
-          alt="facebook logo"
-          width="16px"
-          height="16px"
-        />
+        <svg viewBox="0 0 60 60" className="icon icon-fb">
+          <use xlinkHref={`${sprite}#facebook`}></use>
+        </svg>
       </a>
       <a href="tel:775-555-5555">Phone: 775-555-5555</a>
     </nav>
