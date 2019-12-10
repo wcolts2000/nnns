@@ -24,7 +24,7 @@ function Footer() {
         <p>Reno, NV 89502</p>
         <p>
         <a href="mailto:airitsolutionsreno@gmail.com">
-          <svg viewBox="0 0 16 16" className="icon">
+          <svg viewBox="0 0 16 16" className="icon mail">
             <use xlinkHref={`${sprite}#mail`}></use>
           </svg>
           Email Us</a>
