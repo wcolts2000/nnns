@@ -48,13 +48,16 @@
           transform: scale(1.75);
           margin-right: 2rem;
           background: transparent;
-          transition: all .3s;
+          transition: fill .3s;
           
         }
-        &:hover, &:hover .icon.hero-icon {
+        &:hover {
           color: $color-black;
-          fill: $color-black;
           background: $color-light-blue;
+        }
+        
+        &:hover .icon.hero-icon {
+          fill: $color-black;
         }
       }
     }
