@@ -74,9 +74,9 @@
         margin: 0 2rem .25rem 0;
         transition: all .3s;
 
-        &:hover {
-          fill: $color-light-blue;
-        }
+      }
+      &:hover .icon{
+        fill: $color-light-blue;
       }
     }
 
