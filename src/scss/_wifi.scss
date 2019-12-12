@@ -1,8 +1,55 @@
 .wifi {
+  display: flex;
+  flex-wrap: wrap;
 
+  &__hero {
+    width: 100%;
+    height: 40vh;
+    padding: 8rem;
+    color: $color-black;
+    background: url(../assets/images/cloudkeyHero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    flex: 0 0 100%;
+  }
+
+  &__card {
+    flex: 0 0 100%;
+    font-size: 2.6rem;
+    display: flex;
+    line-height: 1.5;
+    max-height: 50rem;
+    background-color: $color-primary;
+
+    &-info {
+      padding: 4rem;
+    }
+    div,
+    .img {
+      width: 50%;
+
+      img {
+        max-width: 100%;
+        // height: auto;
+      }
+    }
+  }
+
+  &__card.right {
+    background-color: $color-gray-dark;
+    color: $color-white;
+    .img {
+      order: -1;
+    }
+  }
 
   img {
-    width: 40rem;
-    height: auto;
+    width: auto;
+    // max-width: 100%;
+    height: 100%;
   }
 }
