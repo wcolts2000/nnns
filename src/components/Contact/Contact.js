@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import map from "./../../assets/images/googleMap.png";
 
 export default class Contact extends Component {
     state = {
@@ -25,15 +26,18 @@ export default class Contact extends Component {
     render() {
         return (
             <main className="contact">
-                <section className="contact__left">
+                <div className="contact__left">
                     <h1>
                         Contact Us
                     </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis eos ea rerum ex explicabo quis, quisquam debitis excepturi? Nobis aperiam ipsam animi dolore. Vel optio magnam suscipit voluptas delectus?</p>
-                </section>
+                    <a href="https://www.google.com/maps/place/1115+S+Wells+Ave,+Reno,+NV+89502/@39.5146191,-119.8055831,17z/data=!3m1!4b1!4m5!3m4!1s0x809940bc891aa1c7:0xe1e677933f31495e!8m2!3d39.5146191!4d-119.8033944?hl=en" target="_blank" rel="noopener noreferrer">
+                        <img src={map} alt="map" className="contact__image"/>
+                    </a>
+                </div>
 
                 <form className="contact__form" onSubmit={this.handleSubmit}>
-                    <label htmlFor="businessName">Business Name</label>
+                    <label htmlFor="businessName">Business Name <span>(required)</span></label>
                     <input 
                         onChange={this.handleChange}
                         name="businessName"
@@ -42,7 +46,7 @@ export default class Contact extends Component {
                         type="text"
                         required
                         />
-                    <label htmlFor="contactName">Contact Name</label>
+                    <label htmlFor="contactName">Contact Name <span>(required)</span></label>
                     <input 
                         required
                         onChange={this.handleChange}
@@ -51,7 +55,7 @@ export default class Contact extends Component {
                         placeholder="John Doe"
                         type="text"
                         />
-                    <label htmlFor="contactEmail">Contact Email</label>
+                    <label htmlFor="contactEmail">Contact Email <span>(required)</span></label>
                     <input 
                         required
                         onChange={this.handleChange}
@@ -60,7 +64,7 @@ export default class Contact extends Component {
                         placeholder="support@jdenterprise.com"
                         type="email"
                     />
-                    <label htmlFor="contactPhone">Contact Phone</label>
+                    <label htmlFor="contactPhone">Contact Phone <span>(required)</span></label>
                     <input 
                         required
                         onChange={this.handleChange}
@@ -69,7 +73,7 @@ export default class Contact extends Component {
                         placeholder="775-555-5555"
                         type="tel"
                     />
-                    <label htmlFor="serviceRequested">Type of Service Needed</label>
+                    <label htmlFor="serviceRequested">Type of Service Needed <span>(required)</span></label>
                     <input 
                         required
                         onChange={this.handleChange}
@@ -87,7 +91,6 @@ export default class Contact extends Component {
                         />
                     <label htmlFor="businessType">Business Type</label>
                     <input 
-                        required
                         onChange={this.handleChange}
                         name="businessType"
                         value={this.state.businessType}
@@ -103,7 +106,7 @@ export default class Contact extends Component {
                         type="text"
                     />
                     <label htmlFor="internalOnly">Is the installation internal, external, or both?</label>
-                    <input 
+                    <input
                         onChange={this.handleChange}
                         name="internalOnly"
                         value={this.state.internalOnly}
@@ -125,6 +128,7 @@ export default class Contact extends Component {
                         value={this.state.summary}
                         placeholder="Anything we didnt cover in the form..."
                     />
+                    <input type="submit" value="SUBMIT"/>
                 </form>
             </main>
         )
