@@ -15,7 +15,7 @@ function Footer() {
       
       <div className="footer__center">
         <h3>Network tips and trips</h3><ul>
-          <li>5 tips to made your network faster</li>
+          <li>5 tips to make your network faster</li>
           <li>Is your network secure? Check these settings</li>
           <li>IP cameras, what's the benefits?</li>
         </ul>

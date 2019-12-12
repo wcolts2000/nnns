@@ -11,7 +11,7 @@ export default class Contact extends Component {
         deadlineDate: "",
         businessType: "",
         serviceStatus: "",
-        internalOnly: true,
+        internalOnly: '',
         numberOfFloors: 1,
         summary: ""
     }
