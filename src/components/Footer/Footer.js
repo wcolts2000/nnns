@@ -11,7 +11,14 @@ function Footer() {
           <li>Wifi Network Administration</li>
           <li>Security Camera Installation</li>
         </ul>
-        <small>2019 &copy; all rights reserved</small>
+      </div>
+      
+      <div className="footer__center">
+        <h3>Network tips and trips</h3><ul>
+          <li>5 tips to made your network faster</li>
+          <li>Is your network secure? Check these settings</li>
+          <li>IP cameras, what's the benefits?</li>
+        </ul>
       </div>
       <div className="footer__right">
         <h3>Contact us with any questions</h3>
@@ -37,7 +44,8 @@ function Footer() {
             775-555-5555
           </a>
         </p>
-      </div>
+      </div><small>2019 &copy; all rights reserved</small>
+
     </footer>
   );
 }

@@ -2,29 +2,26 @@
 .footer {
   background: $color-gray-light;
   font-size: 1.6rem;
-  padding: 2rem;
+  padding: 6rem 6rem 2rem;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
 
   &__left,
-  &__right {
-    width: 50%;
+  &__right,
+  &__center {
+    width: 30%;
   }
 
   &__left {
     display: flex;
     flex-direction: column;
-
-    ul {
-      padding-inline-start: 0;
-      list-style: none;
-      li {
-        margin-bottom: 1rem;
-      }
-    }
-
-    small {
-      margin-top: auto;
-    }
   }
 
   &__right {
@@ -48,5 +45,31 @@
         transform: translate(-5px, 3px);
       }
     }
+  }
+  
+  ul {
+    padding-inline-start: 0;
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      padding: 1rem 0;
+      transition: all .3s;
+
+      &:hover {
+        background: rgba(0,0,0,.05);
+        padding: 1rem;
+      }
+    }
+  }
+
+
+
+  small {
+    padding: 2rem;
+    width: 100%;
+    align-self: center;
+    border-top: 1px solid $color-black;
+    text-align: center;
   }
 }
