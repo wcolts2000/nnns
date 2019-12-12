@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: space-around;
 
+  @include phone-only {
+    flex-direction: column;
+  }
+
   h3 {
     font-weight: 700;
     font-size: 2rem;
@@ -17,6 +21,10 @@
   &__right,
   &__center {
     width: 30%;
+
+    @include phone-only {
+      width: 100%;
+    }
   }
 
   &__left {
