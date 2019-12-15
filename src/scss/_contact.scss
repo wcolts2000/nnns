@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     width: 100%;
 
-    @include phone-only {
+    @include tablet-landscape {
         flex-wrap: wrap;
         padding: 1rem;
     }
