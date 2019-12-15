@@ -90,8 +90,7 @@ function Wifi() {
       <div className="wifi__hero">
         <h1 className="wifi__heading">
           We Use Only Commercial Grade
-          <br />
-          <br />
+          <br/>
           Wifi Networking Products{" "}
         </h1>
       </div>
