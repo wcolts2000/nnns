@@ -96,12 +96,12 @@ function Wifi() {
         </h1>
       </div>
       {data.pics.map(({ info: { header, p, img } }, i) => (
-        <div key={i} className={`wifi__card ${i % 2 === 0 ? "right" : ""}`}>
+        <div key={i} className={`wifi__card ${(i + 1) % 2 === 0 ? "right" : ""}`}>
           <div className="wifi__card-info">
             <h2>{header}</h2>
             <p>{p}</p>
           </div>
-          <div className="img">
+          <div className={`img ${(i + 1) % 2 === 0 ? "right" : ""}`}>
             <img src={img} alt={`networking pic ${i}`} />
           </div>
         </div>
