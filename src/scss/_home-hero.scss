@@ -1,3 +1,35 @@
+.home {
+  &__video-wrapper {
+    position: relative;
+  }
+  &__hero-video {
+    position: relative;
+  }
+}
+
+.nnns-logo {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: grow 11s ease-in 1s 1 forwards;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+    padding: 0;
+    background: rgba(255,255,255,.1);
+  }
+  100% {
+    width: 50vw;
+    padding: 2rem 8rem;
+    background: rgba(255,255,255,.5);
+  }
+}
+
 .hero {
   padding: 8rem 4rem 15rem;
   background-image: linear-gradient(rgba($color-black,.5), rgba($color-black,.7)), url(../assets/images/switch.jpg);
@@ -14,6 +46,7 @@
   @include tablet-landscape {
     flex-direction: column;
   }
+
 
   &__left {
     width: 50%;
