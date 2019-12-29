@@ -1,8 +1,59 @@
-main {
+.home-cta {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 8rem 2rem;
   font-size: 2rem;
   flex-wrap: wrap;
+  background: $main-gradient;
+  position: relative;
 
+  img.icon-bg {
+    position: absolute;
+    opacity: .1;
+    filter: invert(1);
+    z-index: 0;
+    width: 45vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__left, &__right {
+    width: 45%;
+    color: $color-white;
+    z-index: 1;
+    padding: 2rem;
+  }
+
+  &__left {
+    h2 {
+      font-size: 5vw;
+      text-transform: uppercase;
+    }
+
+    &--icon-bar-wrapper  {
+      display: flex;
+      transform: translateY(-50%);
+      width: 36vw;
+    }
+
+    &--icon {
+      transform: translateY(-50%);
+    }
+  }
+  &__list {
+    font-size: 3rem;
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  .swap {
+    order: -1;
+  }
+
+  .flip {
+    transform: scale(-1, 1);
+  }
 }

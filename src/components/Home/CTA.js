@@ -1,38 +1,24 @@
 import React from "react";
-import sprite from "./../../assets/svg/sprite.svg";
+import accent from "./../../assets/svg/accent.svg";
 
-function CTA({ toggleModal }) {
+function CTA({ title, categoryList, icon, img }) {
   return (
-    <main>
-      <figure className="card">
-        <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#wifi-signal`}></use>
-        </svg>
-        <figcaption>Wifi Services</figcaption>
-        <button onClick={() => toggleModal("wifi")}>DETAILS</button>
-      </figure>
-      <figure className="card">
-        <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#save`}></use>
-        </svg>
-        <figcaption>Pricing</figcaption>
-        <button onClick={() => toggleModal("pricing")}>DETAILS</button>
-      </figure>
-      <figure className="card">
-        <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#casino-cctv`}></use>
-        </svg>
-        <figcaption>Security Cameras</figcaption>
-        <button onClick={() => toggleModal("cameras")}>DETAILS</button>
-      </figure>
-      <figure className="card">
-        <svg viewBox="0 0 60 60" className="icon">
-          <use xlinkHref={`${sprite}#sketch`}></use>
-        </svg>
-        <figcaption>Free Job Appraisal</figcaption>
-        <button onClick={() => toggleModal("appraisal")}>DETAILS</button>
-      </figure>
-    </main>
+    <section className="home-cta">
+      <img class="icon-bg" src={icon} alt="icon"/>
+      <div className="home-cta__left"><h2>{title}</h2>
+        <div className="home-cta__left--icon-bar-wrapper">
+          <img className="home-cta__left--icon-bar" src={accent} alt="design element" />
+          <img className="home-cta__left--icon" src={icon} alt="icon"/>
+        </div>
+        <ul className="home-cta__list">
+        {categoryList.map((category, index) => (
+            <li key={index}>{category}</li>
+          ))}
+        </ul></div>
+      <div className="home-cta__right">
+        <img src={img} alt="product image"/>
+      </div>
+    </section>
   );
 }
 

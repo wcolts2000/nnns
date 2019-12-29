@@ -1,39 +1,6 @@
-.home {
-  &__video-wrapper {
-    position: relative;
-  }
-  &__hero-video {
-    position: relative;
-  }
-}
-
-.nnns-logo {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-  animation: grow 7s ease-in-out 3s infinite alternate forwards;
-}
-
-@keyframes grow {
-  0% {
-    width: 0;
-    padding: 0;
-    background: rgba(255,255,255,.1);
-  }
-  100% {
-    width: 50vw;
-    padding: 2rem 8rem;
-    background: rgba(255,255,255,.5);
-  }
-}
-
 .hero {
-  padding: 8rem 4rem 15rem;
-  background-image: linear-gradient(rgba($color-black,.5), rgba($color-black,.7)), url(../assets/images/switch.jpg);
-  background-image: linear-gradient(rgba($color-black,.5), rgba($color-black,.7)), url(../assets/images/globalnet.jpg);
+  padding: 8rem 4rem;
+  background-image: url(../assets/svg/globalnet.svg);
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
@@ -41,7 +8,7 @@
   color: $color-white;
   text-shadow: 2px 4px 7px rgba($color-black, 0.7);
   display: flex;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+  border-bottom: 20px solid $color-accent;
 
 
   @include tablet-landscape {
@@ -51,85 +18,74 @@
 
   &__left {
     width: 50%;
-    padding: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 4vw;
 
     @include tablet-landscape {
       width: 100%;
     }
     
-      h1 {
-        font-size: 3rem;
-        span {
-          font-size: 2.6rem;
-        }
-      }
       
-      p {
-        margin-bottom: 6rem;
-        font-size: 2.4rem;
-        width: 80%;
-        line-height: 1.75;
-      }
-
-      button {
-        padding: 1.5rem 3.5rem;
-        font-size: 2.6rem;
-        color: $color-white;
-        background: transparent;
-        border: 1px solid $color-white;
-        text-transform: uppercase;
-        border-radius: 70px;
-        cursor: pointer;
-        transition: all 0.3s;
-        font-weight: bold;
-        letter-spacing: 1.75px;
-        animation: pulse .75s ease 0s infinite alternate-reverse both;  
-
-        
-        .icon.hero-icon {
-          fill: $color-white;
-          transform: scale(1.75);
-          margin-right: 2rem;
-          background: transparent;
-          transition: fill .3s;
-          
-        }
-        &:hover {
-          color: $color-black;
-          background: $color-light-blue;
-        }
-        
-        &:hover .icon.hero-icon {
-          fill: $color-black;
-        }
-      }
     }
 
   &__right {
-    font-size: 2.4rem;
-    font-weight: bold;
-    border-radius: 55px 0 55px 0;
-    background: linear-gradient(to top left, rgba($color-primary, .5),  rgba($color-secondary, .2));
+    font-size: 3vw;
+    line-height: 1.25;
+    text-align: right;
     flex: 1;
-    height: 100%;
     padding: 5rem;
+
+    @include tablet-landscape {
+      font-size: 6vw;
+    }
 
     ul {
       padding-inline-start: 0;
     }
     li {
+      text-shadow: $font-shadow;
       margin-bottom: .4rem;
-      font-weight: normal;
       list-style: none;
     }
   }
 }
+// button {
+//   padding: 1.5rem 3.5rem;
+//   font-size: 2.6rem;
+//   color: $color-white;
+//   background: transparent;
+//   border: 1px solid $color-white;
+//   text-transform: uppercase;
+//   border-radius: 70px;
+//   cursor: pointer;
+//   transition: all 0.3s;
+//   font-weight: bold;
+//   letter-spacing: 1.75px;
+//   animation: pulse .75s ease 0s infinite alternate-reverse both;  
 
-@keyframes pulse {
-  0% {
-    box-shadow: 1px 1px 5px 7px rgba($color-white, 0.1);
-  }
-  100% {
-    box-shadow: 2px 2px 40px 10px rgba($color-white, 0.4);
-  }
-}
+  
+//   .icon.hero-icon {
+//     fill: $color-white;
+//     transform: scale(1.75);
+//     margin-right: 2rem;
+//     background: transparent;
+//     transition: fill .3s;
+    
+//   }
+//   &:hover {
+//     color: $color-black;
+//   }
+  
+//   &:hover .icon.hero-icon {
+//     fill: $color-black;
+//   }
+// }
+// @keyframes pulse {
+//   0% {
+//     box-shadow: 1px 1px 5px 7px rgba($color-white, 0.1);
+//   }
+//   100% {
+//     box-shadow: 2px 2px 40px 10px rgba($color-white, 0.4);
+//   }
+// }
