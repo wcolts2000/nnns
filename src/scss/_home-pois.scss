@@ -1,0 +1,60 @@
+.home__pois {
+  display: flex;
+  margin: 6rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+  div {
+    padding: 0 3rem;
+    text-align: center;
+    width: 30%;
+
+    @include tablet-landscape {
+      width: 100%;
+    }
+
+    img {
+      width: 80%;
+
+      @include tablet-landscape {
+        width: 40%;
+      }
+    }
+
+    h3 {
+      font-size: 3.5vw;
+      white-space: nowrap;
+      color: $color-accent;
+      margin: 4rem 0;
+      
+      @include tablet-landscape {
+        font-size: 7.5vw;
+      }
+    }
+
+    p {
+      color: $color-accent;
+      font-size: 2vw;
+      line-height: 1.5;
+
+      @include tablet-landscape {
+        font-size: 3.5vw;
+      }
+    }
+  }
+
+  div:nth-last-of-type(2) {
+    border-left: 2px solid $color-accent;
+    border-right: 2px solid $color-accent;
+    
+    @include tablet-landscape {
+      border-left: 0;
+      border-right: 0;
+      padding: 3rem 0;
+      margin: 3rem;
+      border-top: 2px solid $color-accent;
+      border-bottom: 2px solid $color-accent;
+    }
+  }
+}
