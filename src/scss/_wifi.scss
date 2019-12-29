@@ -67,7 +67,7 @@
     .img.right {
       // background-color: darken($color-gray-dark, 5%);
       // background-color: $color-gray-dark;
-      background: linear-gradient(to bottom right, rgba($color-gray-dark, .1), rgba($color-gray-dark, .5));
+      // background: linear-gradient(to bottom right, rgba($color-gray-dark, .1), rgba($color-gray-dark, .5));
 
       .img {
         max-width: 100%;
@@ -78,7 +78,7 @@
   }
 
   &__card.right {
-    background-color: $color-gray-dark;
+    // background-color: $color-gray-dark;
     color: $color-white;
     .img {
       order: -1;

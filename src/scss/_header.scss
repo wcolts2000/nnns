@@ -4,45 +4,12 @@
   z-index: 100;
 }
 
-.social-header {
-  padding: 1rem 2rem;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background: $color-gray-light;
-
-  a {
-    text-decoration: none;
-    color: $color-black;
-
-    
-    &:first-of-type {
-      margin-right: auto;
-    }
-
-    &:not(:last-of-type) {
-      padding-right: 2rem;
-    }
-
-    .icon-fb {
-      width: 2.2rem;
-      height: 2.2rem;
-      margin-right: 1rem;
-    }
-  }
-  a.active {
-    color: $color-light-blue;
-  }
-
-}
-
 .header-spacer {
-  height: 114.22px;
+  height: 70px;
 }
 
 .App-header {
-  background-color: $color-gray-dark;
+  background: $main-gradient;
   height: 7rem;
   font-size: calc(5px + 2vmin);
   color: $color-white;
@@ -50,48 +17,18 @@
   nav.nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 100%;
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: 300;
-      transition: all 0.3s;
-      margin-right: 2rem;
-
-      &:hover {
-        color: $color-light-blue;
-      }
-
-      &:nth-child(2 ), &:nth-child(3) {
-        border-right: 1px solid $color-white;
-        padding-right: 2rem;
-      }
-    }
-
-    a.active {
-      color: $color-light-blue;
-    }
+    padding: 1rem 3rem;
 
     .home-link {
-      margin-right: auto;
-      padding-left: 3rem;
-      
-      .icon {
-        fill: $color-white;
-        transform: scale(1.7);
-        margin: 0 2rem .25rem 0;
-        transition: all .3s;
-
-      }
-      &:hover .icon{
-        fill: $color-light-blue;
-      }
+      padding: 3rem;
+      width: 200px;
     }
-    
-    .home-link.active .icon {
-      fill: $color-light-blue
+
+    .menu-link {
+      padding: 3rem;
+      width: 85px;
     }
   }
 }

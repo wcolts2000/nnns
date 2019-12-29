@@ -1,17 +1,14 @@
 // COLOR VARIABLES
-$color-primary: #0077ff;
-$color-secondary: #8200be;
-
-$color-light-blue: #00ffff;
-$color-pale-blue: #b0e0e6;
+$main-gradient: linear-gradient(to bottom, #01D3FB, #016A7E);
+$btn-gradient: linear-gradient(to bottom, #D4D4D4, #808080);
+$color-primary: #01B7DA;
+$color-secondary: #016A7E;
+$color-accent: #65FF00;
 
 $color-black: #0f0f0f;
 $color-white: #fff;
 
-$color-gray-dark: #282c34;
-$color-gray-light: #d3d3d3;
-
-// FONT VARIABLES
+$font-shadow: 2px 3px 7px 15px rgba(0,0,0,.3);
 
 // GLOBAL STYLES
 html,
@@ -34,11 +31,10 @@ img {
 }
 
 body {
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: linear-gradient(to bottom right, $color-pale-blue, darken($color-pale-blue, 30%));
 }
 
 .icon {
