@@ -1,4 +1,5 @@
 // COLOR VARIABLES
+$main-gradient: linear-gradient(to bottom, #01D3FB, #016A7E);
 $color-primary: #0077ff;
 $color-secondary: #8200be;
 
@@ -34,7 +35,7 @@ img {
 }
 
 body {
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
