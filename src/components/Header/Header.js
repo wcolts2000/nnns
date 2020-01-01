@@ -13,7 +13,11 @@ function Header({toggleNav, navOpen}) {
             <NavLink exact to="/" className="home-link">
               <img src={logo} alt="NNNS logo"/>
             </NavLink>
+            {
+              navOpen ? 
+              <p onClick={toggleNav} className="menu-link close">X</p> : 
             <img src={hamburger} onClick={toggleNav} className="menu-link" alt="menu icon"/>
+            }
           </nav>
           <nav className={`openNav ${navOpen ? "open" : ""}`}>
             <ul>
