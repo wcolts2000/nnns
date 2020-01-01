@@ -1,53 +1,60 @@
 import React from "react";
-import sprite from "./../../assets/svg/sprite.svg";
+import phone from "./../../assets/svg/phone.svg";
+import email from "./../../assets/svg/email.svg";
+import facebook from "./../../assets/svg/facebook.svg";
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__left">
-        <h3>Wifi Services</h3>
+      <div className="footer-list">
+        <h3>Networking Services</h3>
         <ul>
-          <li>Wifi Network Installation</li>
-          <li>Wifi Network Administration</li>
-          <li>Security Camera Installation</li>
+          <li>Wifi Mesh Network</li>
+          <li>Network Administration</li>
+          <li>Network Engineering</li>
+          <li>Point to Point Connections</li>
+          <li>Cable Runs</li>
         </ul>
       </div>
 
-      <div className="footer__center">
-        <h3>Network tips and tricks</h3>
+      <div className="footer-list">
+        <h3>Computers</h3>
+        <ul>
+          <li>New Computers</li>
+          <li>Refurbished Computers</li>
+          <li>Remote Printer Installation</li>
+          <li>VOIP Systems</li>
+          <li>Merchant Processing</li>
+          <li>Credit Card Machine Integrations</li>
+          <li>Hosted Hospitality Solutions</li>
+          <li>Hospitality Communication Solutions</li>
+        </ul>
+      </div>
+      <div className="footer-list">
+        <h3>Cameras</h3>
+        <ul>
+          <li>Security Cameras</li>
+          <li>IP Cameras</li>
+        </ul>
+      </div>
+      <div className="footer-list last">
+      <h3>Network tips and tricks</h3>
         <ul>
           <li>5 tips to make your network faster</li>
           <li>Is your network secure? Check these settings</li>
           <li>IP cameras, what's the benefits?</li>
         </ul>
       </div>
-      <div className="footer__right">
-        <h3>Contact us with any questions</h3>
-        <p>
-          <svg viewBox="0 0 16 16" className="icon">
-            <use xlinkHref={`${sprite}#pin`}></use>
-          </svg>
-          1115 S. Wells Ave.
-        </p>
-        <p>Reno, NV 89502</p>
-        <p>
-          <a href="mailto:airitsolutionsreno@gmail.com">
-            <svg viewBox="0 0 16 16" className="icon mail">
-              <use xlinkHref={`${sprite}#mail`}></use>
-            </svg>
-            Email Us
-          </a>
-        </p>
-        <p>
-          <a href="tel:775-555-5555">
-            <svg viewBox="0 0 16 16" className="icon">
-              <use xlinkHref={`${sprite}#telephone`}></use>
-            </svg>
-            775-555-5555
-          </a>
-        </p>
+      <div className="footer-bottom">
+        <p>&copy; 2019 | Design by Hurry Up Print. All Rights Reserved</p>
+        <div className="footer-icons">
+          <a href="tel:775-555-5555"> <img src={phone} alt="phone"/></a>
+          <a href="mailto:airitsolutionsreno@gmail.com"> <img src={email} alt="email"/></a>
+          <a href="https://www.facebook.com/pg/nnnsllc/"
+          rel="noopener noreferrer"
+          target="_blank"> <img src={facebook} alt="facebook"/></a>
+        </div>
       </div>
-      <small>2019 &copy; all rights reserved</small>
     </footer>
   );
 }
