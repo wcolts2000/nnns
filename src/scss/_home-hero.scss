@@ -1,10 +1,8 @@
 .hero {
   padding: 8rem 4rem;
   background-image: url(../assets/images/globalnet.jpg);
-  -webkit-overflow-scrolling: touch;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right;
   background-repeat: no-repeat;
   color: $color-white;
   text-shadow: 2px 4px 7px rgba($color-black, 0.7);
