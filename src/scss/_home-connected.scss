@@ -1,8 +1,8 @@
 .home__connected {
 
-  img.map {
+  iframe {
     width: 100vw;
-    object-fit: cover;
+    height: auto;
   }
 
   &-form {
