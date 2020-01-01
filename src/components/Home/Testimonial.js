@@ -9,16 +9,16 @@ function Testimonial() {
       <h2>Testimonials</h2>
       <div className="home__testimonial-card-wrapper">
         <div className="home__testimonial-card">
-          <img src={girl} alt="Authors Picture"/>
-          <img className="quote" src={quote} alt="Authors Picture"/>
+          <img src={girl} alt="Author"/>
+          <img className="quote" src={quote} alt="Author"/>
           <div className="paragraph-wrapper">
             <p>Alex has been taking care of my properties networks for years now. Whenever I get a new property, I call him to come take care of setting me up.</p>
             <p className="author">-Lynn Something</p>
           </div>
         </div>
         <div className="home__testimonial-card">
-          <img src={boy} alt="Authors Picture"/>
-          <img className="quote" src={quote} alt="Authors Picture"/>
+          <img src={boy} alt="Author"/>
+          <img className="quote" src={quote} alt="Author"/>
           <div className="paragraph-wrapper">
             <p>Alex has been taking care of my properties networks for years now. Whenever I get a new property, I call him to come take care of setting me up.</p>
             <p className="author">-Lynn Something</p>

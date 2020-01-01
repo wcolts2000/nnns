@@ -16,7 +16,7 @@ function CTA({ title, categoryList, icon, img, position="" }) {
           ))}
         </ul></div>
       <div className="home-cta__right">
-        <img src={img} alt="product image"/>
+        <img src={img} alt="product"/>
       </div>
     </section>
   );

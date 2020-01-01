@@ -10,6 +10,7 @@ import computer from "../../assets/svg/computer.svg"
 import Video from "./Video";
 import POIs from "./POIs";
 import Testimonial from "./Testimonial";
+import Connected from "./Connected";
 
 const networkingList = ["Wifi Mesh Networks", "Network Administration", "Network Engineering", "Point to Point Connections", "Cable Runs"];
 const computersList = ["New Computers", "Refurbished Computers", "Remote Printer Installations", "VOIP Systems", "Merchant Processing", "Credit Card Machine Integration", "Hosted Hospitality Solutions", "Hospitality Communication Solutions"];
@@ -25,6 +26,7 @@ function Home({ toggleModal, ...rest }) {
       <CTA title="Computers" position="right" icon={computer} img={pos} categoryList={computersList} />
       <Testimonial />
       <CTA title="Cameras" icon={cameraIcon} img={camera} categoryList={camerasList} />
+      <Connected />
     </div>
   );
 }
