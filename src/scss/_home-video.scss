@@ -2,30 +2,63 @@
 
   &-wrapper {
     position: relative;  
+    background: $main-gradient;
+    border-bottom: 2rem solid $color-accent;
   }
 
   &-caption {
     position: absolute;
     @include background-gradient(.2);
-    padding: 8rem 4rem; 
+    padding: 4rem; 
     color: $color-white;
     top: 8rem;
     left: 8rem;
-    width: 25vw;
+    min-width: 25vw;
+    max-width: 35vw;
+    z-index: 10;
+
+    @include desktop {
+      min-width: unset;
+      max-width: unset;
+      width: 80vw;
+      top: 4rem;
+      left: 4rem;
+    }
+    
+    @include tablet-landscape {
+      top: 2rem;
+      left: 2rem;
+      width: 80vw;
+    }
+
+    @include phone-only {
+      top: 2rem;
+      left: 2rem;
+      position: static;
+      margin: 2rem auto;
+      width: 80vw;
+    }
 
     h3 {
       font-size: 3.4rem;
       margin-bottom: 4rem;
+      text-shadow: $font-shadow;
     }
     
     p {
       font-size: 2.4rem;
       margin-bottom: 4rem;
       line-height: 2;
+      text-shadow: $font-shadow;
+      
+      @include tablet-landscape {
+        line-height: 1;
+      }
     }
 
     button {
       padding: 1.5rem 3.5rem;
+      white-space: nowrap;
       font-size: 2.6rem;
       color: $color-white;
       background: transparent;
@@ -53,7 +86,7 @@
         
       }
       &:hover {
-        color: $color-black;
+        color: $color-primary;
       }
       
       &:hover .icon.hero-icon {
@@ -68,7 +101,11 @@
         box-shadow: 2px 2px 40px 10px rgba($color-white, 0.4);
       }
     }
+  }
 
-
+  &-video {
+    @include phone-only {
+      display: none;
+    }
   }
 }
