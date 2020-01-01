@@ -1,7 +1,12 @@
+@supports (background-attachment: fixed) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
 .hero {
   padding: 8rem 4rem;
   background-image: url(../assets/images/globalnet.jpg);
-  // background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   color: $color-white;
