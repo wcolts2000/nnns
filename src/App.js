@@ -12,12 +12,15 @@ import Modal from "./components/Home/Modal";
 class App extends Component {
   state = {
     modalActive: false,
-    category: null
+    category: null,
+    navOpen: false
   };
 
   toggleModal = category => {
     this.setState({ modalActive: !this.state.modalActive, category });
   };
+
+  toggleNav = () => this.setState({navOpen: !this.state.navOpen})
 
   render() {
     return (
@@ -28,7 +31,7 @@ class App extends Component {
           toggleModal={this.toggleModal}
         />
         <div className="App">
-          <Header />
+          <Header toggleNav={this.toggleNav} navOpen={this.state.navOpen} />
           <Switch>
             <Route path="/contact">
               <Contact />

@@ -29,7 +29,39 @@
     .menu-link {
       padding: 3rem;
       width: 85px;
+      cursor: pointer;
     }
   }
+
+  nav.openNav {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    z-index: 10;
+    background: $main-gradient;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    ul li {
+      margin-bottom: 2rem;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 4rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(0,0,0,.5);
+      }
+
+    }
+  }
+}
+
+.App-header nav.openNav.open {
+  display: flex;
 }
 
