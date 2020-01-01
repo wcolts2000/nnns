@@ -52,6 +52,10 @@
           margin-bottom: 1rem;
           padding: .5rem 1rem;
           font-size: 2rem;
+
+          &:last-of-type {
+            margin-bottom: 3rem;
+          }
         }
       }
     }
