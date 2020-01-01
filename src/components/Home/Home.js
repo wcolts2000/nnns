@@ -21,7 +21,7 @@ function Home({ toggleModal, ...rest }) {
       <CTA title="Networking" icon={wifi} img={accessPoints} categoryList={networkingList} />
       <POIs />
       <Video />
-      <CTA title="Computers" icon={computer} img={pos} categoryList={computersList} />
+      <CTA title="Computers" position="right" icon={computer} img={pos} categoryList={computersList} />
       <CTA title="Cameras" icon={cameraIcon} img={camera} categoryList={camerasList} />
     </div>
   );

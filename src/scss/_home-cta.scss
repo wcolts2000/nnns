@@ -7,6 +7,10 @@
   background: $main-gradient;
   position: relative;
 
+  @include phone-only {
+    padding: 8rem 4rem;
+  }
+
   img.icon-bg {
     position: absolute;
     opacity: .1;
@@ -23,6 +27,13 @@
     color: $color-white;
     z-index: 1;
     padding: 2rem;
+
+    @include phone-only {
+      width: 100%;
+      h2 {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__left {
@@ -35,10 +46,16 @@
       display: flex;
       transform: translateY(-50%);
       width: 36vw;
+      
+      @include phone-only {
+        transform: translateY(0);
+
+        
+      }
     }
 
     &--icon {
-      transform: translateY(-50%);
+      transform: translateY(-50%) scale(.5);
     }
   }
   &__list {
@@ -55,5 +72,26 @@
 
   .flip {
     transform: scale(-1, 1);
+  }
+}
+
+.home-cta.right {
+  .home-cta__left {
+    text-align: right;
+
+    &--icon-bar-wrapper {
+      transform: scale(-1, 1);
+
+      h2 {
+        margin-left: auto;
+      }
+    }
+  }
+  .home-cta__right {
+    order: -1;
+
+    @include phone-only {
+      order: 1;
+    }
   }
 }
