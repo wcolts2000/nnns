@@ -1,9 +1,10 @@
 // COLOR VARIABLES
-$main-gradient: linear-gradient(to bottom, #01D3FB, #016A7E);
-$btn-gradient: linear-gradient(to bottom, #D4D4D4, #808080);
+$color-primary-bright: #01D3FB;
 $color-primary: #01B7DA;
 $color-secondary: #016A7E;
 $color-accent: #65FF00;
+$main-gradient: linear-gradient(to bottom, $color-primary-bright, $color-secondary);
+$btn-gradient: linear-gradient(to bottom, #D4D4D4, #808080);
 
 $color-black: #0f0f0f;
 $color-white: #fff;
