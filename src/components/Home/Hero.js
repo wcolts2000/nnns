@@ -9,12 +9,12 @@ function Hero() {
             </div>
             <div className="hero__right">
                 <ul>
-                    <li>NETWORKING</li>
-                    <li>COMPUTERS</li>
-                    <li>VOIP</li>
-                    <li>CAMERAS</li>
-                    <li>POINT OF SALES</li>
-                    <li>MERCHANT PROCESSING</li>
+                    <li><a href="/networking">NETWORKING</a></li>
+                    <li><a href="/computers">COMPUTERS</a></li>
+                    <li><a href="/voip">VOIP</a></li>
+                    <li><a href="/cameras">CAMERAS</a></li>
+                    <li><a href="/pos">POINT OF SALES</a></li>
+                    <li><a href="/merchant">MERCHANT PROCESSING</a></li>
                 </ul>
             </div>
         </div>

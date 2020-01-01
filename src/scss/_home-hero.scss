@@ -1,6 +1,6 @@
 .hero {
   padding: 8rem 4rem;
-  background-image: url(../assets/svg/globalnet.svg);
+  background-image: url(../assets/images/globalnet.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
@@ -47,6 +47,19 @@
       text-shadow: $font-shadow;
       margin-bottom: .4rem;
       list-style: none;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s;
+        
+        &:hover {
+          padding: 1rem 3rem;
+          background: rgba(0,0,0,.5);
+          color: $color-primary;
+        }
+      }
     }
   }
 }
