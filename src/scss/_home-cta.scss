@@ -49,11 +49,11 @@
       
       @include phone-only {
         transform: translateY(0);
-
+        
         
       }
     }
-
+    
     &--icon {
       transform: translateY(-50%) scale(.5);
     }
@@ -61,30 +61,19 @@
   &__list {
     font-size: 3rem;
   }
-
+  
   &__right {
     display: flex;
-  }
-
-  .swap {
-    order: -1;
-  }
-
-  .flip {
-    transform: scale(-1, 1);
   }
 }
 
 .home-cta.right {
   .home-cta__left {
     text-align: right;
-
+    
     &--icon-bar-wrapper {
-      transform: scale(-1, 1);
-
-      h2 {
-        margin-left: auto;
-      }
+      transform: translateY(-50%) scale(-1, 1);
+      margin-left: auto;
     }
   }
   .home-cta__right {
