@@ -1,5 +1,6 @@
 import React from 'react';
-import data from "../../assets/video/data.mp4";
+import data from "../../assets/video/data-smaller.mp4";
+import dataweb from "../../assets/video/data-web.webm";
 
 function Video() {
   return (
@@ -11,6 +12,7 @@ function Video() {
         <button> <a href="#!">See Pricing Here</a></button>    
       </div>
         <video class="home__video-video" width="100%" loop autoPlay muted>
+            <source src={dataweb} type="video/webm"/>
             <source src={data} type="video/mp4"/>
             Sorry, your browser does not support embedded videos.
         </video>
