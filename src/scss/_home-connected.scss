@@ -15,6 +15,10 @@
     padding: 4rem;
     justify-content: space-around;
 
+    @include phone-only {
+      flex-direction: column;
+    }
+
     h3 {
       font-size: 8rem;
       text-shadow: $font-shadow;
@@ -30,6 +34,10 @@
       width: 40%;
       justify-content: space-around;
 
+      @include phone-only {
+        width: 100%;
+      }
+
       h4 {
         font-size: 4rem;
         flex: 0 1 100%;
@@ -37,6 +45,10 @@
 
       img {
         width: 150px;
+
+        @include phone-only {
+          display: none;
+        }
       }
 
       form {

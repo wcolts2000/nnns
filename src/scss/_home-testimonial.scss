@@ -4,6 +4,10 @@
   h2 {
     font-size: 8rem;
     text-align: center;
+
+    @include phone-only {
+      font-size: 6rem;
+    }
   }
 
   &-card-wrapper {
@@ -26,7 +30,8 @@
     border: 1px solid $color-accent;
     border-radius: 2rem;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
 
     @include tablet-landscape {
       width: 100%;
@@ -34,6 +39,11 @@
 
     img {
       width: 30%;
+
+      @include phone-only {
+        width: 70%;
+        margin-bottom: 2rem;
+      }
 
 
       &.quote {

@@ -62,6 +62,10 @@ button {
   letter-spacing: 1.75px;
   animation: pulse .75s ease 0s infinite alternate-reverse both;
 
+  @include phone-only {
+    font-size: 1.6rem;
+  }
+
   a {
     color: inherit;
     text-decoration: none;

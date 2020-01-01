@@ -8,6 +8,10 @@
   align-items: flex-start;
   justify-content: space-around;
   color: $color-white;
+  
+  @include phone-only {
+    padding: 6rem 6rem 0;
+  }
 
   .footer-list {
     // width: 22%;
@@ -17,6 +21,10 @@
     &:not(.last) {
       border-right: 2px solid $color-white;
       align-self: stretch;
+      
+      @include phone-only {
+        border-right:none;
+      }
     }
   }
 
@@ -58,9 +66,23 @@
     border-top: 2px solid $color-white;
     text-align: center;
 
+    @include phone-only {
+      padding-top: 4rem;
+      font-size: 2.4rem;
+      line-height: 1.5;
+      flex-wrap: wrap;
+    }
+
     .footer-icons {
       display: flex;
       margin-left: auto;
+
+      @include phone-only {
+        flex: 0 1 100%;
+        justify-content: center;
+        order: -1;
+        margin-bottom: 2rem;
+      }
 
       
       img {
