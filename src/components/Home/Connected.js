@@ -17,7 +17,7 @@ export default class Connected extends Component {
       email: "",
       phone: ''
     })
-  }
+  }                               
 
   handleChange = ({target: {name, value}}) => this.setState({ [name]: value})
 
