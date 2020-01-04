@@ -72,7 +72,7 @@
     text-align: right;
     
     &--icon-bar-wrapper {
-      transform: scale(-1, 1);
+      transform: translateY(-5rem) scaleX(-1);
       margin-left: auto;
     }
   }
