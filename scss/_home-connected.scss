@@ -1,0 +1,80 @@
+.home__connected {
+
+  iframe {
+    width: 100vw;
+    height: auto;
+  }
+
+  &-form {
+    background-image: url(/images/web-3706561_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: $color-white;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-around;
+
+    @include tablet-landscape {
+      flex-direction: column;
+    }
+
+    h3 {
+      font-size: 8rem;
+      text-shadow: $font-shadow;
+      width: 40%;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      background: $main-gradient;
+      padding: 3rem;
+      border-radius: 2rem;
+      width: 40%;
+      justify-content: space-around;
+
+      @include tablet-landscape {
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 4rem;
+        flex: 0 1 100%;
+      }
+
+      img {
+        width: 150px;
+        align-self: flex-start;
+
+        @include tablet-landscape {
+          display: none;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet-landscape {
+          width: 100%;
+        }
+
+        label {
+          font-size: 2rem;
+          margin-bottom: .5rem;
+        }
+
+        input {
+          margin-bottom: 1rem;
+          padding: .5rem 1rem;
+          font-size: 2rem;
+
+          &:last-of-type {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
