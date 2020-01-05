@@ -18,7 +18,7 @@ function Header({toggleNav, navOpen}) {
         </nav>
         <nav className={`openNav ${navOpen ? "open" : ""}`}>
           <ul>
-            <li><Link href="/networking"><a>Networking</a></Link></li>
+            <li><Link href="/networking" passHref><a>Networking</a></Link></li>
             <li><Link href="/computers"><a>Computers</a></Link> </li>
             <li><Link href="/voip"><a>VOIP</a></Link> </li>
             <li><Link href="/cameras"><a>Cameras</a></Link> </li>
