@@ -47,27 +47,53 @@
     display: flex;
     align-items: center;
 
+    ul {
+      width: 0;
+      transition: all .5s ease-in-out;
+      overflow: hidden;
+      transition-delay: 0.4s;
+      opacity: 0;
+    }
+
     ul li {
-      margin-bottom: 2rem;
+      margin: 2rem;
+      padding: 1rem 0;
+      width: fit-content;
+      transition: all .5s;
+      cursor: pointer;
+      &:hover {
+        padding: 1rem 2rem;
+        background: rgba(0,0,0,.5);
+      }
     }
     
     a {
       width: 0;
       text-decoration: none;
       color: $color-white;
+      white-space: nowrap;
       font-size: 4rem;
-      padding: 1rem 2rem;
-      cursor: pointer;
-
-      &:hover {
-        background: rgba(0,0,0,.5);
-      }
-
+      
+      
     }
   }
 }
 
 .App-header nav.openNav.open {
   height: calc(100vh - 70px);
+}
+
+.App-header nav.openNav.open ul {
+  width: 50%;
+  opacity: 1;
+}
+
+.body-container {
+  height: auto;
+}
+
+.body-container.nav-open {
+  height: 15vh;
+  overflow: hidden;
 }
 
