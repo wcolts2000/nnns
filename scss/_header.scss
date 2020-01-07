@@ -38,11 +38,13 @@
 
   nav.openNav {
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
     z-index: 10;
     background: $main-gradient;
-    display: none;
     justify-content: center;
+    display: flex;
     align-items: center;
 
     ul li {
@@ -50,6 +52,7 @@
     }
     
     a {
+      width: 0;
       text-decoration: none;
       color: $color-white;
       font-size: 4rem;
@@ -65,6 +68,6 @@
 }
 
 .App-header nav.openNav.open {
-  display: flex;
+  height: calc(100vh - 70px);
 }
 
