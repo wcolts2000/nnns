@@ -10,6 +10,9 @@ function Header({toggleNav, navOpen}) {
           <Link href="/">
             <img className="home-link" src='/svg/NNNS_NavLogo.svg' alt="NNNS logo"/>
           </Link>
+          <Link href="/">
+            <a className="acct-link">Acct Login</a>
+          </Link>
           {
             navOpen ? 
             <p onClick={toggleNav} className="menu-link close">X</p> : 

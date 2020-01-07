@@ -24,6 +24,13 @@
       cursor: pointer;
     }
 
+    .acct-link {
+      color: $color-white;
+      text-decoration: none;
+      margin-left: auto;
+      text-transform: uppercase;
+    }
+
     .menu-link {
       padding: 3rem;
       width: 85px;
