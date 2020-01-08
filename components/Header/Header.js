@@ -21,12 +21,12 @@ function Header({toggleNav, navOpen}) {
         </nav>
         <nav className={`openNav ${navOpen ? "open" : ""}`}>
           <ul>
-            <li><a href="/networking" >Networking</a></li>
-            <li><a href="/computers">Computers</a></li>
-            <li><a href="/voip">VOIP</a></li>
-            <li><a href="/cameras">Cameras</a></li>
-            <li><a href="/pos">Point of Sales</a></li>
-            <li><a href="/merchantProcessing">Merchant Processing</a></li>
+            <li><a href="/Networking" >Networking</a></li>
+            <li><a href="/Computers">Computers</a></li>
+            <li><a href="/Voip">VOIP</a></li>
+            <li><a href="/Cameras">Cameras</a></li>
+            <li><a href="/Pos">Point of Sales</a></li>
+            <li><a href="/MerchantProcessing">Merchant Processing</a></li>
           </ul>
         </nav>
       </header>

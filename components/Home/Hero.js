@@ -6,12 +6,12 @@ function Hero() {
             </div>
             <div className="hero__right">
                 <ul>
-                    <li><a href="/networking">NETWORKING</a></li>
-                    <li><a href="/computers">COMPUTERS</a></li>
-                    <li><a href="/voip">VOIP</a></li>
-                    <li><a href="/cameras">CAMERAS</a></li>
-                    <li><a href="/pos">POINT OF SALES</a></li>
-                    <li><a href="/merchantProcessing">MERCHANT PROCESSING</a></li>
+                    <li><a href="/Networking">NETWORKING</a></li>
+                    <li><a href="/Computers">COMPUTERS</a></li>
+                    <li><a href="/Voip">VOIP</a></li>
+                    <li><a href="/Cameras">CAMERAS</a></li>
+                    <li><a href="/Pos">POINT OF SALES</a></li>
+                    <li><a href="/MerchantProcessing">MERCHANT PROCESSING</a></li>
                 </ul>
             </div>
         </section>
