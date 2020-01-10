@@ -57,9 +57,9 @@
     }
   }
 
-  &-video {
-    @include phone-only {
-      display: none;
-    }
-  }
+  // &-video {
+  //   @include phone-only {
+  //     display: none;
+  //   }
+  // }
 }
