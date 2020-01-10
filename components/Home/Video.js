@@ -9,7 +9,7 @@ function Video() {
       </div>
         <video className="home__video-video" width="100%" loop autoPlay muted>
             <source src='/video/data-web.webm' type="video/webm"/>
-            <source src='/video/data-smaller.mp4' type="video/mp4"/>
+            <source src='/video/HB-Data-Smaller.mp4' type="video/mp4"/>
             Sorry, your browser does not support embedded videos.
         </video>
     </div>
