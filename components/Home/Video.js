@@ -8,7 +8,7 @@ function Video() {
         <button> <a href="#!">See Pricing Here</a></button>    
       </div>
         <video className="home__video-video" width="100%" loop autoPlay muted>
-            <source src='/video/HB-Data-Smaller.mp4' type="video/mp4"/>
+            <source src='/video/HBdata-web.mp4' type="video/mp4"/>
             <source src='/video/data-web.webm' type="video/webm"/>
             Sorry, your browser does not support embedded videos.
         </video>
