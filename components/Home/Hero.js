@@ -3,6 +3,7 @@ function Hero() {
         <section className="hero">
             <div className="hero__left">
                 <img src='/svg/NNNS_Logo.svg' alt="NNNS logo"/>
+                <button className="cta-btn">Get Free Quote!</button>
             </div>
             <div className="hero__right">
                 <ul>

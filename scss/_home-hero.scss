@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     padding: 4vw;
+    flex-direction: column;
+
+    button.cta-btn {
+      margin: 4rem 2rem;
+    }
 
       @include tablet-landscape {
         width: 100%;
